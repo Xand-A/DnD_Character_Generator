@@ -57,9 +57,10 @@ def abilityscore_generator(characterClass):
 
     return arrangedScore
 
+
 def stat_bonus(race):
-    """Races have stat bonuses which are in addition to the ability scores 
-    which act as modifiers on rolls - taking random race generated and show 
+    """Races have stat bonuses which are in addition to the ability scores
+    which act as modifiers on rolls - taking random race generated and show
     bonuses as well
     """
 
@@ -73,7 +74,7 @@ def stat_bonus(race):
     }
 
     scoreAssignments = {
-        "Dwarf": [2,0, 1, 0, 0, 0],
+        "Dwarf": [2, 0, 1, 0, 0, 0],
         "Elf": [0, 2, 0, 0, 1, 0],
         "Halfling": [0, 2, 1, 0, 0, 0],
         "Dragonborn": [2, 0, 0, 0, 0, 1],
@@ -95,7 +96,8 @@ def stat_bonus(race):
 
     if race != "Human":
         assignedScores = scoreAssignments.get(race, [0, 1, 2, 3, 4, 5])
-    else: assignedScores = my_list
+    else:
+        assignedScores = my_list
 
     arrangedScore = {
         "STR": assignedScores[0],
@@ -105,7 +107,6 @@ def stat_bonus(race):
         "WIS": assignedScores[4],
         "CHA": assignedScores[5],
     }
-
 
     return arrangedScore
 
@@ -124,6 +125,7 @@ def ability_scores_(characterClass, race):
         if key not in dict1:
             result[key] = dict2[key]
     return result
+
 
 def modifiers_(abilityScores):
     modifiers = {}

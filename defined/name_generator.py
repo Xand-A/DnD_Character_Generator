@@ -2,9 +2,9 @@ import random
 
 from defined.name_list import *
 
-def char_name(race,gender):
-    """Function to return character name based on character race and gender
-    """
+
+def char_name(race, gender):
+    """Function to return character name based on character race and gender"""
     name = ""
 
     if race == "Dwarf" and gender == "Female":
@@ -45,16 +45,25 @@ def char_name(race,gender):
         name = random.choice(tiefling_first_names_male)
     else:
         name = "Unknown"
-    
+
     match race:
-        case "Dwarf": name += f' {random.choice(dwarf_last_names)}'
-        case "Elf": name += f' {random.choice(elf_last_names)}'
-        case "Halfling": name += f' {random.choice(halfling_last_names)}'
-        case "Human": name += f' {random.choice(human_last_names)}'
-        case "Dragonborn": name += f' {random.choice(dragonborn_last_names)}'
-        case "Gnome": name += f' {random.choice(gnome_last_names)}'
-        case "Half-Elf": name += f' {random.choice(half_elf_last_names)}'
-        case "Half-Orc": name += f' {random.choice(half_orc_last_names)}'
-        case "Tiefling": name += f' {random.choice(tiefling_last_names)}'
+        case "Dwarf":
+            name += f" {random.choice(dwarf_last_names)}"
+        case "Elf":
+            name += f" {random.choice(elf_last_names)}"
+        case "Halfling":
+            name += f" {random.choice(halfling_last_names)}"
+        case "Human":
+            name += f" {random.choice(human_last_names)}"
+        case "Dragonborn":
+            name += f" {random.choice(dragonborn_last_names)}"
+        case "Gnome":
+            name += f" {random.choice(gnome_last_names)}"
+        case "Half-Elf":
+            name += f" {random.choice(half_elf_last_names)}"
+        case "Half-Orc":
+            name += f" {random.choice(half_orc_last_names)}"
+        case "Tiefling":
+            name += f" {random.choice(tiefling_last_names)}"
 
     return name

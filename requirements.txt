@@ -1,0 +1,10 @@
+pandas
+black
+requests
+streamlit 
+os
+random
+sys
+pdfkit
+base64
+pre-commit

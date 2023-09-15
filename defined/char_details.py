@@ -27,5 +27,4 @@ CLASSES = [
 
 GENDER = ["Male", "Female"]
 
-ALIGN_LIST = [["Lawful", "Neutral", "Chaotic"], \
-              ["Good", "Neutral", "Evil"]]
+ALIGN_LIST = [["Lawful", "Neutral", "Chaotic"], ["Good", "Neutral", "Evil"]]
